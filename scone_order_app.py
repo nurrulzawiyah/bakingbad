@@ -5,7 +5,7 @@ from datetime import datetime
 st.set_page_config(page_title="Scone Order Form", page_icon="🍪")
 
 # --- Add your logo here ---
-st.image("logo.png", width=300)  # Change "logo.png" to your actual file name
+st.image("logi.png", width=300)  # Change "logo.png" to your actual file name
 
 # Storage for orders
 if "orders" not in st.session_state:
