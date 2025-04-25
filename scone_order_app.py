@@ -8,7 +8,7 @@ st.set_page_config(page_title="Scone Order Form", page_icon="🍪")
 if "orders" not in st.session_state:
     st.session_state.orders = []
 
-st.title("🍪 Scone Order Form for Sunday!")
+st.title("🍪 Scone Order Form for Sunday 27 April 2025!")
 
 st.markdown("""
 Order your fresh, homemade scones for this Sunday!  
@@ -48,7 +48,7 @@ with st.form("order_form"):
 st.markdown("---")
 with st.expander("🍪 Admin Only: Download Orders (Protected)"):
     admin_pw = st.text_input("Enter admin password:", type="password")
-    if admin_pw == "YOUR_ADMIN_PASSWORD":  # Change this to your own password!
+    if admin_pw == "h3ib3rg":  # Change this to your own password!
         if st.session_state.orders:
             df = pd.DataFrame(st.session_state.orders)
             st.dataframe(df)
