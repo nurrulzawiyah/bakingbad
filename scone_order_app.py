@@ -6,18 +6,10 @@ st.set_page_config(page_title="Scone Order Form", page_icon="🍪")
 # Storage for orders
 if "orders" not in st.session_state:
     st.session_state.orders = []
-
-
-
-# --- Add your logo here ---
-st.markdown(
-    """
-    <div style="display: flex; justify-content: center;">
-        <img src="logi.png" width="300"/>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+    
+col1, col2, col3 = st.columns([1,2,1])
+with col2:
+    st.image("logi.png", width=300)
 
 st.title("🍪 Scone Order Form for Sunday 27 April 2025!")
 
