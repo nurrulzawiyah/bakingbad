@@ -4,6 +4,16 @@ from datetime import datetime
 
 st.set_page_config(page_title="Scone Order Form", page_icon="🍪")
 
+# --- Add your logo here ---
+st.image("logo.png", width=200)  # Change "logo.png" to your actual file name
+
+st.title("🍪 Scone Order Form for Sunday!")
+
+st.markdown("""
+Order your fresh, homemade scones for this Sunday!  
+Fill in your details below and we'll WhatsApp you for confirmation & payment.
+""")
+
 # Storage for orders
 if "orders" not in st.session_state:
     st.session_state.orders = []
