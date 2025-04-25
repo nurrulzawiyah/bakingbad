@@ -3,6 +3,11 @@ import pandas as pd
 from datetime import datetime
 
 st.set_page_config(page_title="Scone Order Form", page_icon="🍪")
+# Storage for orders
+if "orders" not in st.session_state:
+    st.session_state.orders = []
+
+
 
 # --- Add your logo here ---
 st.markdown(
@@ -13,11 +18,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-
-# Storage for orders
-if "orders" not in st.session_state:
-    st.session_state.orders = []
 
 st.title("🍪 Scone Order Form for Sunday 27 April 2025!")
 
