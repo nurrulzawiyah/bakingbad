@@ -7,10 +7,7 @@ st.set_page_config(page_title="Scone Order Form", page_icon="🍪")
 if "orders" not in st.session_state:
     st.session_state.orders = []
     
-col1, col2, col3 = st.columns([1,2,1])
-with col2:
-    st.image("logi.png", width=300)
-
+st.title("Baking Bad, MY")
 st.title("🍪 Scone Order Form for Sunday 27 April 2025!")
 
 st.markdown("""
