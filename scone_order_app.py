@@ -11,6 +11,8 @@ st.image("logo.png", width=200)  # Change "logo.png" to your actual file name
 if "orders" not in st.session_state:
     st.session_state.orders = []
 
+# --- Add your logo here ---
+st.image("logo.png", width=200) 
 st.title("🍪 Scone Order Form for Sunday 27 April 2025!")
 
 st.markdown("""
